@@ -7,8 +7,8 @@ pipeline {
         stage('Build mvn packege') {
             steps {
                 git branch: "${env.BRANCH}",
-                url: 'https://github.com/8ball92/maven-hello-world.git'
-                sh "cd my-app && mvn package " 
+                    url: 'https://github.com/8ball92/maven-hello-world.git'
+                    sh "cd my-app && mvn package " 
                   
             }
         }
